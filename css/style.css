@@ -80,7 +80,8 @@ html {
             html body main .login-container .form-container .botttom-container div a {
               text-decoration: none;
               display: flex;
-              align-items: center; }
+              align-items: center;
+              font-weight: 600; }
               html body main .login-container .form-container .botttom-container div a:hover {
                 color: #5f79af; }
               html body main .login-container .form-container .botttom-container div a img {
