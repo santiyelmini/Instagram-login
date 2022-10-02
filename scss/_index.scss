@@ -10,7 +10,7 @@ html {
         height: 100%;
         background-color: #fafafa;
         display: grid;
-        grid-gap: 10px;
+        grid-gap: 50px;
         grid-template-columns: 100%;
         grid-template-rows: 5fr 1fr;
         grid-template-areas: 
@@ -30,6 +30,10 @@ html {
                     width: 100%;
                     background-color: #fff;
                     border: 1px solid #c2c2c2;
+                    @media (max-width: 768px) {
+                        border: none;
+                        background-color: #fafafa;
+                    }
                     form {
                         width: 100%;
                         height: 40%;
@@ -99,8 +103,8 @@ html {
                                     color: #5f79af;
                                 }
                               img {
-                                width: 20px;
-                                height: 20px;
+                                width: 18px;
+                                height: 18px;
                                 border-radius: 3px;
                                 margin-right: 5px;
                                 }
@@ -127,6 +131,10 @@ html {
                     align-items: center;
                     justify-content: center;
                     flex-direction: row;
+                    @media (max-width: 768px) {
+                        border: none;
+                        background-color: #fafafa;
+                    }
                     h3 {
                         font-weight: 300;
                         font-size: 15px;
@@ -150,9 +158,12 @@ html {
                     margin-bottom: 25px;
                 }
                 .img-container {
-                    img {
-                        width: 136px;
-                        height: 40px;
+                    a {
+                        text-decoration: none;
+                        img {
+                            width: 136px;
+                            height: 40px;
+                        }
                     }
                 }
             }
@@ -165,7 +176,7 @@ html {
             .links-container {
                 display: flex;
                 flex-direction: row;
-                width: 60%;
+                width: 70%;
                 flex-wrap: wrap;
                 justify-content: center;
                 div {
@@ -173,7 +184,10 @@ html {
                     a {
                         color: #8e8e8e;
                         text-decoration: none;
-                        font-size: 13px;
+                        font-size: 12px;
+                        &:hover {
+                            color: #adadad;
+                        }
                     }
                 }
             }

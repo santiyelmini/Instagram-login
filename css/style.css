@@ -9,7 +9,7 @@ html {
     height: 100%;
     background-color: #fafafa;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 50px;
     grid-template-columns: 100%;
     grid-template-rows: 5fr 1fr;
     grid-template-areas: "main" "footer"; }
@@ -27,6 +27,10 @@ html {
           width: 100%;
           background-color: #fff;
           border: 1px solid #c2c2c2; }
+          @media (max-width: 768px) {
+            html body main .login-container .form-container {
+              border: none;
+              background-color: #fafafa; } }
           html body main .login-container .form-container form {
             width: 100%;
             height: 40%;
@@ -85,8 +89,8 @@ html {
               html body main .login-container .form-container .botttom-container div a:hover {
                 color: #5f79af; }
               html body main .login-container .form-container .botttom-container div a img {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
                 border-radius: 3px;
                 margin-right: 5px; }
             html body main .login-container .form-container .botttom-container a {
@@ -105,6 +109,10 @@ html {
           align-items: center;
           justify-content: center;
           flex-direction: row; }
+          @media (max-width: 768px) {
+            html body main .login-container .noaccount-container {
+              border: none;
+              background-color: #fafafa; } }
           html body main .login-container .noaccount-container h3 {
             font-weight: 300;
             font-size: 15px;
@@ -122,9 +130,11 @@ html {
           font-weight: 300;
           font-size: 14px;
           margin-bottom: 25px; }
-        html body main .download-container .img-container img {
-          width: 136px;
-          height: 40px; }
+        html body main .download-container .img-container a {
+          text-decoration: none; }
+          html body main .download-container .img-container a img {
+            width: 136px;
+            height: 40px; }
     html body footer {
       grid-area: footer;
       align-items: flex-start;
@@ -133,7 +143,7 @@ html {
       html body footer .links-container {
         display: flex;
         flex-direction: row;
-        width: 60%;
+        width: 70%;
         flex-wrap: wrap;
         justify-content: center; }
         html body footer .links-container div {
@@ -141,4 +151,6 @@ html {
           html body footer .links-container div a {
             color: #8e8e8e;
             text-decoration: none;
-            font-size: 13px; }
+            font-size: 12px; }
+            html body footer .links-container div a:hover {
+              color: #adadad; }
