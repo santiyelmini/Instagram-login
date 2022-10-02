@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    body {
+        height: 100%;
+        background-color: #fafafa;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 100%;
+        grid-template-rows: 5fr 1fr;
+        grid-template-areas: 
+        "main"
+        "footer";
+        main {
+            grid-area: main;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .login-container {
+                height: 600px;
+                width: 400px;
+                .form-container {
+                    height: 80%;
+                    width: 100%;
+                    background-color: #fff;
+                    border: 1px solid #c2c2c2;
+                    form {
+                        width: 100%;
+                        height: 40%;
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        input {
+                            height: 38px;
+                            border: none;
+                            background-color: #fafafa;
+                            margin-bottom: 15px;
+                            border: 1px solid #c2c2c2;
+                            border-radius: 1px;
+                            padding-left: 8px;
+                            font-size: 12px;
+                            width: 280px;
+                            &:focus {
+                                outline: 1px solid #727272;
+                            }
+                            &:hover {
+                                cursor: text;
+                            }
+                        }
+                        .login-btn {
+                            height: 35px;
+                            border: none;
+                            width: 280px;
+                            background-color: #0095f6;
+                            border-radius: 3px;
+                            color: #fff;
+                            font-weight: 600;
+                            font-size: 15px;
+                        }
+                    }
+                    .instagramlogo-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 30%;
+                        img {
+                            width: 175px;
+                            height: 50px;
+                        }
+                    }
+                    .hr-container {
+                        display: flex;
+                        justify-content: center;
+                        hr {
+                            width: 70%;
+                        }
+                    }
+                    .botttom-container {
+                        height: 30%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        div {
+                            a {
+                                text-decoration: none;
+                                display: flex;
+                                align-items: center;
+                                &:hover {
+                                    color: #5f79af;
+                                }
+                              img {
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 3px;
+                                margin-right: 5px;
+                                }
+                            }
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #385185;
+                            &:hover {
+                                color: #5f79af;
+                            }
+                        }
+                        .misspassword {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .noaccount-container {
+                    background-color: #fff;
+                    height: 10%;
+                    border: 1px solid #c2c2c2;
+                    margin-top: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    h3 {
+                        font-weight: 300;
+                        font-size: 15px;
+                        margin-right: 5px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #0289e4;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .download-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                    font-weight: 300;
+                    font-size: 14px;
+                    margin-bottom: 25px;
+                }
+                .img-container {
+                    img {
+                        width: 136px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        footer {
+            grid-area: footer;
+            align-items: flex-start;
+            display: flex;
+            justify-content: center;
+            .links-container {
+                display: flex;
+                flex-direction: row;
+                width: 60%;
+                flex-wrap: wrap;
+                justify-content: center;
+                div {
+                    margin: 8px;
+                    a {
+                        color: #8e8e8e;
+                        text-decoration: none;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
